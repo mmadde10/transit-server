@@ -15,7 +15,7 @@ var mongoClient *mongo.Client
 
 func main() {
 
-	var dbURI = "mongodb+srv://mmadden:61Mom4kid%2461@cluster0-8h0op.gcp.mongodb.net/test?retryWrites=true&w=majority"
+	var dbURI = ""
 	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
 	clientOptions := options.Client().ApplyURI(dbURI)
 	mongoClient, _ = mongo.Connect(ctx, clientOptions)

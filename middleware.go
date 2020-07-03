@@ -13,7 +13,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var key = "175a52d13b194e9eac3fab7865ce3285"
+var key = ""
 
 func getInfo(w http.ResponseWriter, r *http.Request) {
 
