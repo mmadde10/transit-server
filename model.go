@@ -16,6 +16,7 @@ type Rgb struct {
 // Line stuct defines the train line
 type Line struct {
 	Name        string `json:"name"`
+	LineID      string `json:"lineId"`
 	LongName    string `json:"longName"`
 	Description string `json:"description"`
 	Rgb         Rgb    `json:"rgb"`
@@ -56,6 +57,9 @@ type ETA struct {
 	DestinationName string `json:"destNm"`
 	DestinationStop string `json:"destSt"`
 	RunNumber       string `json:"rn"`
+	Route           string `json:"rt"`
+	IsApproaching   string `json:"isApp"`
+	IsDelayed       string `json:"isDly"`
 	StationName     string `json:"staNm"`
 	StopDescription string `json:"stpDe"`
 	PredictedTime   string `json:"prdt"`
